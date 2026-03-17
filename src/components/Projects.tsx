@@ -19,17 +19,16 @@ const projects: Project[] = [
       "Modern e-commerce platform specialized for jewelry retail with advanced filtering",
     tags: ["React", "Node.js", "MySQL", "Stripe"],
     status: "Production",
-    github: "https://github.com/afrit-med-rayan/lunaire",
-    live: "https://demo-lunaire.vercel.app",
+    live: "https://www.lunairetn.com/",
     featured: true,
   },
   {
-    title: "Customer Churn Prediction — Djezzy",
+    title: "Rentlify",
     description:
-      "Supervised ML model predicting which prepaid customers are likely to switch to postpaid. Improved accuracy by 12% through hyperparameter tuning and model stacking. Deployed with a Power BI dashboard for the Djezzy commercial team.",
-    tags: ["Python", "scikit-learn", "Flask", "Docker", "Power BI", "Streamlit"],
+      "Rentlify is a web application that helps travelers easily discover and book unique homestays through a simple and intuitive platform. It connects users to a variety of accommodations, making travel planning faster and more convenient.",
+    tags: ["React", "Node.js", "Flask", "Docker", "Power BI", "Streamlit"],
     status: "Deployed",
-    github: "https://github.com/afrit-med-rayan",
+    live: "https://rentlify.vercel.app/",
   },
   {
     title: "ZOA – Veterinary Clinic System",
@@ -37,15 +36,15 @@ const projects: Project[] = [
       "ZOA is a comprehensive Veterinary Clinic Management System designed to streamline operations for clinics, veterinarians, and pet owners.",
     tags: ["React", "Node.js", "Flask", "PostgreSQL", "NLP", "Docker"],
     status: "Deployed",
-    live: "https://zoa-clinic-demo.vercel.app",
+    live: "https://zoa.ai/",
   },
   {
     title: "Freshmart Store",
     description:
       "Freshmart Store is a modern grocery shopping platform designed to offer users a seamless and visually appealing experience. Built using React and Vite, it focuses on performance and smooth navigation. Redux ensures efficient state management for cart operations and product handling, while Tailwind CSS provides a clean and responsive interface optimized for all devices.",
-    tags: ["React", "Vite", "Redux", "Tailwind CSS"],
+    tags: ["React", "Vite", "Redux", "Tailwind CSS", "Vercel"],
     status: "Deployed",
-    live: "https://freshmart-demo.vercel.app",
+    live: "https://freshmart-store.vercel.app/",
   },
 ];
 

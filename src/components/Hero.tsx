@@ -85,7 +85,7 @@ export default function Hero() {
               />
             </a>
             <a
-              href="/cv.pdf"
+              href="/assets/cv_afrit.pdf"
               download
               className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-white/40 transition-all duration-200"
             >
@@ -97,7 +97,7 @@ export default function Hero() {
           {/* Social Links */}
           <div className="flex items-center gap-4 animate-on-scroll delay-600">
             <a
-              href="https://github.com/"
+              href="https://github.com/afrit-med-rayan"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 border border-white/15 rounded-lg text-white/60 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-200"
@@ -106,7 +106,7 @@ export default function Hero() {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/mohamed-rayan-afrit-180b48260/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 border border-white/15 rounded-lg text-white/60 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-200"

@@ -7,19 +7,19 @@ const certifications = [
     title: "Oracle Cloud",
     subtitle: "Generative AI Professional",
     period: "2025–2027",
-    link: "https://mylearn.oracle.com/ou/credential/mohamed-rayan-afrit/",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=41EB49175F3CBFF7BEFF2D2651533ED581ECBB733433533F72A96F364A63C561",
   },
   {
     title: "Oracle Cloud",
     subtitle: "DevOps Professional",
     period: "2025–2027",
-    link: "https://mylearn.oracle.com/ou/credential/mohamed-rayan-afrit/",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=30A40BC75AB05EB4DC3B078CEF971A062D52D8FBFF0A27617C9C605DFE7ED3D3",
   },
   {
     title: "Oracle Cloud",
     subtitle: "Data Science Professional",
     period: "2025–2027",
-    link: "https://mylearn.oracle.com/ou/credential/mohamed-rayan-afrit/",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=30A40BC75AB05EB4DC3B078CEF971A06AACD5B49F36452A7CF3F4C1A7975342F",
   },
 ];
 

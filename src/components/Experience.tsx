@@ -86,16 +86,14 @@ export default function Experience() {
               >
                 {/* Dot */}
                 <div
-                  className={`absolute -left-12 top-1 flex items-center justify-center w-10 h-10 rounded-full border-2 ${
-                    exp.current
+                  className={`absolute -left-12 top-1 flex items-center justify-center w-10 h-10 rounded-full border-2 ${exp.current
                       ? "border-[#2563eb] bg-[#2563eb]"
                       : "border-[#e2e8f0] bg-white"
-                  }`}
+                    }`}
                 >
                   <div
-                    className={`w-3 h-3 rounded-full ${
-                      exp.current ? "bg-white" : "bg-[#cbd5e1]"
-                    }`}
+                    className={`w-3 h-3 rounded-full ${exp.current ? "bg-white" : "bg-[#cbd5e1]"
+                      }`}
                   />
                 </div>
 

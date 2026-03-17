@@ -48,7 +48,7 @@ export default function Contact() {
         {/* Social Row */}
         <div className="flex items-center justify-center gap-4 animate-on-scroll delay-400 mb-16">
           <a
-            href="https://www.linkedin.com/in/afrit-med-rayan/"
+            href="https://www.linkedin.com/in/mohamed-rayan-afrit-180b48260/"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-2 px-5 py-2.5 border border-white/15 rounded-xl text-white/70 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-200"
@@ -58,7 +58,7 @@ export default function Contact() {
             <span className="text-sm font-medium">LinkedIn</span>
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/afrit-med-rayan"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-2 px-5 py-2.5 border border-white/15 rounded-xl text-white/70 hover:text-white hover:border-white/30 hover:bg-white/5 transition-all duration-200"
