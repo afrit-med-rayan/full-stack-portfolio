@@ -1,22 +1,25 @@
 "use client";
 
-import { Award } from "lucide-react";
+import { Award, ExternalLink } from "lucide-react";
 
 const certifications = [
   {
     title: "Oracle Cloud",
     subtitle: "Generative AI Professional",
     period: "2025–2027",
+    link: "https://mylearn.oracle.com/ou/credential/mohamed-rayan-afrit/",
   },
   {
     title: "Oracle Cloud",
     subtitle: "DevOps Professional",
     period: "2025–2027",
+    link: "https://mylearn.oracle.com/ou/credential/mohamed-rayan-afrit/",
   },
   {
     title: "Oracle Cloud",
     subtitle: "Data Science Professional",
     period: "2025–2027",
+    link: "https://mylearn.oracle.com/ou/credential/mohamed-rayan-afrit/",
   },
 ];
 
@@ -91,17 +94,21 @@ export default function About() {
               </p>
               <div className="grid sm:grid-cols-3 gap-3">
                 {certifications.map((cert, i) => (
-                  <div
+                  <a
                     key={i}
-                    className="group p-4 border border-[#e2e8f0] rounded-xl bg-[#f8faff] hover:border-[#2563eb]/40 hover:shadow-md hover:shadow-blue-100 transition-all duration-300 cursor-default"
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group p-4 border border-[#e2e8f0] rounded-xl bg-[#f8faff] hover:border-[#2563eb]/40 hover:shadow-md hover:shadow-blue-100 transition-all duration-300 block"
                   >
-                    <div className="flex items-start gap-2 mb-2">
+                    <div className="flex items-start justify-between mb-2">
                       <div className="p-1.5 bg-[#2563eb]/10 rounded-lg">
                         <Award
                           size={14}
                           className="text-[#2563eb]"
                         />
                       </div>
+                      <ExternalLink size={12} className="text-[#94a3b8] opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
                     <p className="text-xs font-semibold text-[#2563eb] mb-0.5">
                       {cert.title}
@@ -110,7 +117,7 @@ export default function About() {
                       {cert.subtitle}
                     </p>
                     <p className="text-xs text-[#94a3b8] mt-1">{cert.period}</p>
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>
