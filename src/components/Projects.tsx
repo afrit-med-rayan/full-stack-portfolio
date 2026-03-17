@@ -14,11 +14,13 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Ceramic Studio Platform",
+    title: "Lunaire",
     description:
-      "Full e-commerce and brand platform for an Algiers ceramics atelier. Covers B2B (hotels, restaurants) and B2C sales, workshop booking, and a custom North African–inspired design system. Phase 2 will add a structured training platform with student portals.",
-    tags: ["React", "Node.js", "MySQL", "Stripe", "Vercel"],
-    status: "In progress",
+      "Modern e-commerce platform specialized for jewelry retail with advanced filtering",
+    tags: ["React", "Node.js", "MySQL", "Stripe"],
+    status: "Production",
+    github: "https://github.com/afrit-med-rayan/lunaire",
+    live: "https://demo-lunaire.vercel.app",
     featured: true,
   },
   {
@@ -27,27 +29,23 @@ const projects: Project[] = [
       "Supervised ML model predicting which prepaid customers are likely to switch to postpaid. Improved accuracy by 12% through hyperparameter tuning and model stacking. Deployed with a Power BI dashboard for the Djezzy commercial team.",
     tags: ["Python", "scikit-learn", "Flask", "Docker", "Power BI", "Streamlit"],
     status: "Deployed",
+    github: "https://github.com/afrit-med-rayan",
   },
   {
-    title: "Pro Assurance — Smart Cities Hackathon · 2nd place",
+    title: "ZOA – Veterinary Clinic System",
     description:
-      "AI-powered system automating accident report management: QR scan, NLP-based form extraction, and integrated digital payment. Built in 48 hours, placed 2nd overall at the Future Caravans × Djezzy × Guiddini hackathon.",
+      "ZOA is a comprehensive Veterinary Clinic Management System designed to streamline operations for clinics, veterinarians, and pet owners.",
     tags: ["React", "Node.js", "Flask", "PostgreSQL", "NLP", "Docker"],
-    status: "Hackathon project",
+    status: "Deployed",
+    live: "https://zoa-clinic-demo.vercel.app",
   },
   {
-    title: "Payment File Management — Algérie Télécom",
+    title: "Freshmart Store",
     description:
-      "Automated payment file processing system for Algeria's national telecoms provider. Reduced manual workload significantly and improved data accuracy by 30%. This was also the basis of my Licence thesis.",
-    tags: ["PHP", "Laravel", "MySQL", "Power BI", "JavaScript"],
-    status: "Production",
-  },
-  {
-    title: "ZenGenius — MLH Hackathon",
-    description:
-      "AI study assistant that transforms PDFs into interactive learning tools — automatic summaries, flashcard generation, and semantic Q&A — powered by Gemini Pro and a full RAG pipeline.",
-    tags: ["React", "Node.js", "MongoDB", "Auth0", "Gemini API", "LangChain"],
-    status: "Hackathon project",
+      "Freshmart Store is a modern grocery shopping platform designed to offer users a seamless and visually appealing experience. Built using React and Vite, it focuses on performance and smooth navigation. Redux ensures efficient state management for cart operations and product handling, while Tailwind CSS provides a clean and responsive interface optimized for all devices.",
+    tags: ["React", "Vite", "Redux", "Tailwind CSS"],
+    status: "Deployed",
+    live: "https://freshmart-demo.vercel.app",
   },
 ];
 
@@ -105,15 +103,40 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-4">
                   <span
-                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-full border ${
-                      statusConfig[featured.status].color
-                    }`}
+                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-full border ${statusConfig[featured.status].color
+                      }`}
                   >
                     <Clock size={11} />
                     {featured.status}
                   </span>
+
+                  {/* Links for Featured Project */}
+                  <div className="flex items-center gap-2">
+                    {featured.github && (
+                      <a
+                        href={featured.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-[#64748b] hover:text-[#0f172a] hover:bg-gray-100 rounded-lg transition-colors"
+                      >
+                        <Github size={16} />
+                        Code
+                      </a>
+                    )}
+                    {featured.live && (
+                      <a
+                        href={featured.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-[#2563eb] hover:bg-blue-50 rounded-lg transition-colors"
+                      >
+                        <ExternalLink size={16} />
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
@@ -146,9 +169,8 @@ export default function Projects() {
               </div>
               <div className="flex items-center justify-between">
                 <span
-                  className={`inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full border ${
-                    statusConfig[project.status].color
-                  }`}
+                  className={`inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full border ${statusConfig[project.status].color
+                    }`}
                 >
                   {project.status}
                 </span>
@@ -158,10 +180,11 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 rounded-lg text-[#64748b] hover:text-[#0f172a] hover:bg-gray-100 transition-colors"
-                      aria-label="GitHub"
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium text-[#64748b] hover:text-[#0f172a] hover:bg-gray-100 rounded-lg transition-colors"
+                      aria-label="GitHub Code"
                     >
-                      <Github size={16} />
+                      <Github size={14} />
+                      Code
                     </a>
                   )}
                   {project.live && (
@@ -169,10 +192,11 @@ export default function Projects() {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 rounded-lg text-[#64748b] hover:text-[#2563eb] hover:bg-blue-50 transition-colors"
-                      aria-label="Live demo"
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium text-[#2563eb] hover:bg-blue-50 rounded-lg transition-colors"
+                      aria-label="Live Demo"
                     >
-                      <ExternalLink size={16} />
+                      <ExternalLink size={14} />
+                      Demo
                     </a>
                   )}
                 </div>
