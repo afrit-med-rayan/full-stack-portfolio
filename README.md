@@ -2,7 +2,6 @@
 
 A bold, modern, and high-end personal portfolio built with **Next.js 14**, **Tailwind CSS**, and **TypeScript**. Designed to showcase expertise in Full-Stack Development, AI Engineering, and Data Science.
 
-![Portfolio Preview](/assets/profile.jpg)
 
 ## 🚀 Tech Stack
 
