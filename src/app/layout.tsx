@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "Data Science",
     "Oracle Cloud",
     "Algeria",
-    "Boumerdès",
+    "Algiers",
     "Djezzy",
   ],
   authors: [{ name: "Mohamed Rayan Afrit" }],

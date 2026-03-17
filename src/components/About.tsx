@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Award, ExternalLink } from "lucide-react";
 
 const certifications = [
@@ -34,11 +35,15 @@ export default function About() {
               {/* Outer decorative rings */}
               <div className="absolute -inset-4 rounded-2xl border-2 border-[#2563eb]/20 rotate-3" />
               <div className="absolute -inset-2 rounded-2xl border border-[#2563eb]/30 -rotate-2" />
-              {/* Main avatar */}
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 bg-gradient-to-br from-[#0f172a] to-[#1e293b] rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden">
-                <span className="font-syne font-bold text-6xl sm:text-7xl text-white tracking-tight select-none">
-                  MRA
-                </span>
+              {/* Main avatar / Image */}
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 bg-gradient-to-br from-[#0f172a] to-[#1e293b] rounded-2xl shadow-2xl overflow-hidden group">
+                <Image
+                  src="/assets/profile.jpg"
+                  alt="Mohamed Rayan Afrit"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  priority
+                />
                 <div className="absolute inset-0 bg-[#2563eb]/10" />
                 <div
                   className="absolute bottom-0 left-0 right-0 h-1/3"
@@ -66,7 +71,7 @@ export default function About() {
             <div className="space-y-4 text-[#64748b] leading-relaxed animate-on-scroll delay-200">
               <p>
                 I&apos;m Rayan — a developer and AI engineer based in
-                Boumerdès, Algeria. I&apos;m currently finishing my
+                Algiers, Algeria. I&apos;m currently finishing my
                 Master&apos;s in Computer Science with a focus on Data Science,
                 Cloud Computing, and AI Engineering. I&apos;ve worked across
                 the full stack: from shipping Laravel backends at Algérie
@@ -82,8 +87,7 @@ export default function About() {
               </p>
               <p>
                 Right now I&apos;m freelancing on a full e-commerce + showcase
-                platform for a ceramics studio, which is how you probably found
-                this.
+                platform.
               </p>
             </div>
 
